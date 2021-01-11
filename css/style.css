@@ -1,0 +1,8 @@
+/* base */
+@import "base/bootstrap.min.css";
+@import "base/custom.css";
+@import "base/slick.css";
+
+/* deco */
+@import "deco/animation.css";
+@import "deco/container.css";

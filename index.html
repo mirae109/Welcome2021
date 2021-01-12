@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="logo_icon.ico">
+  <link rel="shortcut icon" href="image/logo_icon.ico">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>2021년 신입생들을 환영합니다!</title>
 </head>
 
@@ -73,7 +73,7 @@
     </div>
   </section>
 
-  <div style="margin-top: 30%; text-align: center;">
+  <div style="margin-top: 30%; margin-bottom: 50px; text-align: center; ">
     <!-- sin_4 -->
     <img src="image/4_1.png" style="max-width: 50%;">
   </div>
@@ -85,27 +85,32 @@
     </div>
   </a>
 
-  <div class="slide">
-    <div><img src="image/card_11.png" style="max-width: 100%"></div>
-    <div><img src="image/card_22.png" style="max-width: 100%"></div>
-    <div><img src="image/card_33.png" style="max-width: 100%"></div>
-    <div><img src="image/card_44.png" style="max-width: 100%"></div>
-    <div><img src="image/card_55.png" style="max-width: 100%"></div>
-    <div><img src="image/card_66.png" style="max-width: 100%"></div>
+  <div class="swiper-container" style="margin-bottom: 50px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/card_11.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_22.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_33.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_44.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_55.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_66.png" style="max-width: 100%"></div>
+    </div>
   </div>
 
   <div style="text-align: center;">
     <img src="image/6_title.png" class="img-fluid mt-4 mb-4" id="5_title" style="max-width: 50%;">
   </div>
 
-  <div class="slide" style="margin-bottom: 80px;">
-    <div><img src="image/card_77.png" style="max-width: 100%"></div>
-    <div><img src="image/card_88.png" style="max-width: 100%"></div>
-    <div><img src="image/card_99.png" style="max-width: 100%"></div>
-    <div><img src="image/card_1010.png" style="max-width: 100%"></div>
-    <div><img src="image/card_1111.png" style="max-width: 100%"></div>
-    <div><img src="image/card_1212.png" style="max-width: 100%"></div>
+  <div class="swiper-container" style="margin-bottom: 50px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/card_77.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_88.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_99.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_1010.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_1111.png" style="max-width: 100%"></div>
+      <div class="swiper-slide"><img src="image/card_1212.png" style="max-width: 100%"></div>
+    </div>
   </div>
+
 
   <!-- sin_7 학생회-->
   <a name="student">
@@ -122,7 +127,7 @@
   </a>
 
   <div>
-    <div style="position: relative; margin-bottom: 100px;">
+    <div style="position: relative; margin-bottom: 50px;">
       <img src="image/kill 투명배경.png" style="max-width: 100%;">
       <div data-aos="zoom-in-up" style="position: absolute; top: 30%; left: 33%;">
         <img src="image/갈-노 kill.png" style="max-width: 90%;">
@@ -131,14 +136,14 @@
   </div>
 
   <a name="club">
-    <div class="crew-active" style="margin-bottom: 100px;">
+    <div class="crew-active" style="margin-bottom: 50px;">
       <img src="image/10_1.1.png" style="max-width: 100%;">
       <br><br>
       <img src="image/10_2.1.png" style="max-width: 100%;">
     </div>
   </a>
 
-  <div style=" text-align: center; margin-bottom: 100px; ">
+  <div style=" text-align: center; margin-bottom: 50px; ">
     <img src="image/노랑_유령.png" id="노랑_유령" style="max-width: 15%;">
   </div>
 
@@ -180,9 +185,18 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+  <script>
+		var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+	</script>
   <script>
     AOS.init();
   </script>
